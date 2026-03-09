@@ -1,238 +1,226 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>INOVATA - Móveis Sob Medida</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INOVATA — Móveis Sob Medida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0B0530;">
-    <div class="container-fluid">
-      <a class="navbar-brand titulo-principal" href="#">INOVATA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active titulo" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link titulo" href="#Sobre">Sobre</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link titulo" href="#Fotos">Fotos</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link titulo" href="#Contato">Contato</a>
-          </li>
-        </ul>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner" style="background-color: #0B0530;">
-      <div class="carousel-item active">
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <img src="Img/I.png" alt="" width="100" height="100">
-            <h1 style="color: #FF9900;">INOVATA Móveis Sob Medida</h1>
-            <p></p>
-            <p><a class="btn btn-lg  botao" href="#Sobre">Sobre</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="Img/ideiasparaquartodecasalcores.jpeg" alt="" width="100%" height="100%">
-      </div>
-      <div class="carousel-item" style="background-color: #FF9900;">
-      
-        <div class="container" >
-          <div class="carousel-caption text-end">
-            <h1>Entre em contato</h1>
-            <p>Não importa se você está procurando um móvel para o seu lar ou para o seu escritório, nós temos a solução perfeita para você. Entre em contato conosco hoje mesmo para obter mais informações e para fazer um orçamento gratuito</p>
-            <p><a class="btn btn-lg botao-inv" href="#Contato">Contato</a></p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <button  class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">
+    <img src="img/logo.png" alt="INOVATA">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#galeria">Fotos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
   </div>
+</nav>
 
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Móveis Sob Medida · Cachoeirinha, RS</div>
+    <h1 class="hero-title">Madeira que<br>conta <em>histórias</em></h1>
+    <p class="hero-subtitle">Fabricamos móveis únicos que unem beleza artesanal, precisão técnica e materiais certificados — feitos para durar gerações.</p>
+    <div class="hero-ctas">
+      <a href="#contato" class="btn-gold">Solicitar Orçamento</a>
+      <a href="#sobre" class="btn-outline">Conheça-nos</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Rolar</div>
+</section>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+<!-- STATS -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat-item" data-reveal="up" data-delay="1">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Anos de Experiência</div>
+    </div>
+    <div class="stat-item" data-reveal="up" data-delay="2">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Sob Medida</div>
+    </div>
+    <div class="stat-item" data-reveal="up" data-delay="3">
+      <div class="stat-number">∞</div>
+      <div class="stat-label">Garantia de Qualidade</div>
+    </div>
+  </div>
+</div>
 
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row" style="display: flex; align-items: center; text-align: center; justify-content: center;">
-      <div class="col-lg-4">
-        <i class="bi bi-file-person-fill bd-placeholder-img rounded-circle"><img src="Img/info-circle-fill.svg" alt="" width="140" height="140"></i>
-
-        <h2 class="fw-normal">Sobre</h2>
-        <p>Um pouco sobre nós</p>
-        <p><a class="btn botao-inv" href="#Sobre">Sobre &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <i class="bi bi-file-person-fill bd-placeholder-img rounded-circle"><img src="Img/person-lines-fill.svg" alt="" width="140" height="140"></i>
-
-        <!-- <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+<!-- ABOUT -->
+<section id="sobre">
+  <div>
+    <div class="section-tag" data-reveal="left">Nossa História</div>
+    <h2 class="section-title" data-reveal="up" data-delay="1">Arte e habilidade<br>em cada <em>peça</em></h2>
+    <div class="section-body" data-reveal="up" data-delay="2">
+      <p>Bem-vindo à INOVATA, onde a tradição marceneira se encontra com o design contemporâneo. Há mais de 20 anos fabricamos móveis de madeira de alta qualidade, criados com paixão e dedicação.</p>
+      <p>Cada projeto é único — desde mesas de jantar até armários de cozinha, desenvolvemos soluções que atendem às suas necessidades com precisão e beleza.</p>
+    </div>
+  </div>
+  <div>
+    <div class="cards-stack">
+      <div class="about-card" data-reveal="right" data-delay="2">
+        <div class="about-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Equipe Qualificada</h3>
+        <p>Marceneiros experientes usando as melhores técnicas e ferramentas para criar peças duráveis e de longa vida.</p>
       </div>
-      <div class="col-lg-4">
-        <i class="bi bi-file-person-fill bd-placeholder-img rounded-circle"><img src="Img/file-person-fill.svg" alt="" width="140" height="140"></i> -->
-
-        <h2 class="fw-normal">Contato</h2>
-        <p>Entre em contato para que possamos tirar suas dúvidas</p>
-        <p><a class="btn botao-inv" href="#Contato">Contato &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider" id="Sobre">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">INOVATA <span class="text-muted">Móveis Sob Medida</span></h2>
-        <p class="lead">Bem-vindo à nossa marcenaria, onde arte e habilidade se unem para criar peças únicas e personalizadas. Somos uma empresa com muitos anos de experiência na fabricação de móveis de madeira de alta qualidade. Nós acreditamos que cada peça deve ser criada com paixão e dedicação, combinando a beleza da madeira com a funcionalidade perfeita.
-      </div>
-      <div class="col-md-5">
-        <img src="Img/Design sem nome (2).png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="...">
-
+      <div class="about-card" data-reveal="right" data-delay="4" style="margin-left:1.5rem">
+        <div class="about-card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Entrega Pontual</h3>
+        <p>Respeitamos o seu tempo. Cada projeto é planejado com prazos claros e cumpridos com responsabilidade.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">A mais de 20 anos realizando <span class="text-muted">sonhos</span></h2>
-        <p class="lead"> Temos uma equipe altamente qualificada de marceneiros que usam as melhores técnicas e ferramentas para criar peças que são duráveis e de longa duração. Desde mesas de jantar até armários de cozinha, nós fornecemos soluções personalizadas que atendem às suas necessidades específicas.          </p>
+<!-- VALUES -->
+<section id="valores">
+  <div class="values-inner">
+    <div class="values-header">
+      <div class="section-tag" data-reveal="fade" style="justify-content:center">Nossos Valores</div>
+      <h2 class="section-title" data-reveal="up" data-delay="1" style="color:white">O que nos move</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" data-reveal="up" data-delay="1">
+        <div class="value-num">01</div>
+        <h3>Personalização Total</h3>
+        <p>Cada móvel é projetado exclusivamente para o seu espaço e necessidade. Nenhuma peça é igual a outra.</p>
       </div>
-      <div class="col-md-5 order-md-1">
-        <img src="Img/Design sem nome (3).png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="...">
-
+      <div class="value-card" data-reveal="up" data-delay="2">
+        <div class="value-num">02</div>
+        <h3>Sustentabilidade</h3>
+        <p>Usamos materiais certificados de fontes responsáveis, garantindo produtos de qualidade com respeito ao meio ambiente.</p>
+      </div>
+      <div class="value-card" data-reveal="up" data-delay="3">
+        <div class="value-num">03</div>
+        <h3>Qualidade Garantida</h3>
+        <p>Todos os nossos produtos possuem garantia de qualidade. A sua satisfação total é nosso compromisso.</p>
       </div>
     </div>
+  </div>
+</section>
 
-
-
-    <hr class="featurette-divider">
-    
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Nos importamos com o  <span class="text-muted">meio ambiente.</span></h2>
-        <p class="lead">
-          Nós entendemos a importância do meio ambiente e, portanto, usamos materiais certificadas de fontes responsáveis para garantir 
-          a sustentabilidade. Além disso, oferecemos uma garantia de qualidade em todos os nossos produtos para garantir sua satisfação total.
-          </p>
+<!-- GALLERY -->
+<section id="galeria">
+  <div class="gallery-inner">
+    <div class="gallery-header">
+      <div>
+        <div class="section-tag" data-reveal="left">Nosso Trabalho</div>
+        <h2 class="section-title" data-reveal="up" data-delay="1" style="margin-bottom:0">Cada peça,<br>uma <em>obra</em></h2>
       </div>
-      <div class="col-md-5">
-        <img src="Img/Design sem nome.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="...">
-
+      <a href="https://www.instagram.com/inovatamoveis/" target="_blank" data-reveal="fade" data-delay="2">Ver no Instagram</a>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-reveal="scale" data-delay="1">
+        <img src="img/ideiasparaquartodecasalcores.jpeg" alt="Quarto de Casal">
+        <div class="gallery-overlay"><span>Quarto de Casal</span></div>
+      </div>
+      <div class="gallery-item" data-reveal="up" data-delay="2">
+        <img src="img/Design sem nome (2).png" alt="Sala de Estar">
+        <div class="gallery-overlay"><span>Sala de Estar</span></div>
+      </div>
+      <div class="gallery-item" data-reveal="up" data-delay="3">
+        <img src="img/Design sem nome (3).png" alt="Home Office">
+        <div class="gallery-overlay"><span>Home Office</span></div>
+      </div>
+      <div class="gallery-item" data-reveal="up" data-delay="2">
+        <img src="img/Design sem nome.png" alt="Cozinha Moderna">
+        <div class="gallery-overlay"><span>Cozinha Moderna</span></div>
+      </div>
+      <div class="gallery-item" data-reveal="up" data-delay="4">
+        <img src="img/IMAGEM-6-1024x576.jpg" alt="Cozinha Planejada">
+        <div class="gallery-overlay"><span>Cozinha Planejada</span></div>
+      </div>
+      <div class="gallery-item" data-reveal="up" data-delay="5">
+        <img src="img/Design sem nome (1).png" alt="Espaço Comercial">
+        <div class="gallery-overlay"><span>Espaço Comercial</span></div>
       </div>
     </div>
+  </div>
+</section>
 
-    <hr class="featurette-divider" id="Contato">
-
-    <div class="row" style="height: 100%; width: 100%;">
-      <h1 style="display: flex; justify-content: center;">Dados para contato:</h1>
-      
-      <div class="input-group mb-2">
-        <span class="input-group-text botao-link">
-          <img src="Img/file-person-fill.svg" alt="" width="20" height="20">
-        </span>
-        
-        <input type="text" class="form-control" placeholder="Marcelo Burigo Rosso" aria-label="" aria-describedby="basic-addon1" disabled>
+<!-- CONTACT -->
+<section id="contato">
+  <div>
+    <div class="section-tag" data-reveal="left">Fale Conosco</div>
+    <h2 class="section-title" data-reveal="up" data-delay="1">Pronto para<br>criar algo <em>único?</em></h2>
+    <div class="contact-info-list">
+      <div class="contact-item" data-reveal="up" data-delay="1">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Responsável</div>
+          <div class="contact-value">Marcelo Burigo Rosso</div>
+        </div>
       </div>
-      
-      <div class="input-group mb-2">
-        <span class="input-group-text botao-link">
-          <a href="mailto:mb.rosso1973@gmail.com"><img src="Img/envelope.svg" alt="" width="20" height="20"></a>
-        </span>
-        <input type="email" class="form-control" placeholder="mb.rosso1973@gmail.com" target="_blank" aria-label="" aria-describedby="basic-addon1" disabled>
-      </div>
-      
-      <div class="input-group mb-2">
-        <span class="input-group-text botao-link">
-          <a  href="https://contate.me/inovata"><img src="Img/whatsapp.svg" alt="" width="20" height="20"></a>
-        </span>
-        <input type="text" class="form-control" placeholder="51 99239-9600" target="_blank" aria-label="" aria-describedby="basic-addon1" disabled>
-      </div>
-
-      <div class="input-group mb-2">
-        <span class="input-group-text botao-link">
-          <a  href="https://www.instagram.com/inovatamoveis/" target="_blank"><img src="Img/instagram.svg" alt="" width="20" height="20"></a>
-        </span>
-        <input type="text" class="form-control" placeholder="inovatamoveis" aria-label="" aria-describedby="basic-addon1" disabled>
-      </div>
-
-      </div>
-      <!-- <div class="input-group w-50">
-        <button class="btn btn-md botao"> Abir WhatsApp </button>
-      </div> -->
-      
+      <a class="contact-item" data-reveal="up" data-delay="2" href="mailto:mb.rosso1973@gmail.com">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">E-mail</div>
+          <div class="contact-value">mb.rosso1973&#64;gmail.com</div>
+        </div>
+      </a>
+      <a class="contact-item" data-reveal="up" data-delay="3" href="https://contate.me/inovata" target="_blank">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.96-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">WhatsApp</div>
+          <div class="contact-value">51 99239-9600</div>
+        </div>
+      </a>
+      <a class="contact-item" data-reveal="up" data-delay="4" href="https://www.instagram.com/inovatamoveis/" target="_blank">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Instagram</div>
+          <div class="contact-value">@inovatamoveis</div>
+        </div>
+      </a>
     </div>
+  </div>
+  <div class="contact-cta-block" data-reveal="right" data-delay="2">
+    <h2 class="section-title">Orçamento<br>gratuito</h2>
+    <p>Não importa se você busca um móvel residencial ou corporativo — temos a solução ideal. Entre em contato e transformemos a sua visão em realidade.</p>
+    <a href="https://contate.me/inovata" class="btn-whatsapp" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      Abrir WhatsApp
+    </a>
+  </div>
+</section>
 
-    <hr class="featurette-divider">
+<!-- FOOTER -->
+<footer>
+  <a class="footer-logo" href="#">
+    <img src="img/logo.png" alt="INOVATA">
+  </a>
+  <span class="footer-copy">© 2024 Filipe Rosso · INOVATA Móveis</span>
+  <a href="#" class="footer-back" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+</footer>
 
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <div>
-    <p class="float-end"><a href="#"><img src="Img/arrow-up.svg" alt="" srcset=""></a></p>
-    </div>
-    <p>&copy; 2023 Filipe Rosso &middot;</p>
-  </footer>
-</main>
-
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
-  </body>
+<script src="main.js"></script>
+</body>
 </html>
