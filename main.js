@@ -3,28 +3,35 @@
    main.js
 ══════════════════════════════════════ */
 
+// ── Preferências de movimento ──
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ── Ano atual no footer ──
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 // ── Navbar scroll ──
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
-});
+}, { passive: true });
 
 // ── Hamburger ──
 const hamburger = document.querySelector('.hamburger');
 const navLinks  = document.querySelector('.nav-links');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-});
+function setMenu(open) {
+  hamburger.classList.toggle('open', open);
+  navLinks.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', String(open));
+}
+hamburger.addEventListener('click', () => setMenu(!hamburger.classList.contains('open')));
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  });
+  link.addEventListener('click', () => setMenu(false));
 });
 
 // ── Smooth scroll ──
 function smoothScrollTo(targetY, duration) {
+  if (reduceMotion) { window.scrollTo(0, targetY); return; }
   const startY = window.scrollY;
   const diff   = targetY - startY;
   let startTime = null;
