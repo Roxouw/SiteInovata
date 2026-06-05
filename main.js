@@ -104,3 +104,18 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')  showPrev();
   if (e.key === 'ArrowRight') showNext();
 });
+
+// ── Tracking de conversão ──
+// Dispara evento em qualquer clique de CTA marcado com data-evt.
+// Funciona com GA4 (gtag) e/ou GTM (dataLayer) — basta instalar um deles no <head>.
+document.querySelectorAll('[data-evt]').forEach(el => {
+  el.addEventListener('click', () => {
+    const evt = el.dataset.evt;
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', evt, { event_category: 'cta', event_label: el.href || evt });
+    }
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({ event: 'cta_click', cta: evt, url: el.href || '' });
+    }
+  });
+});
